@@ -1,0 +1,21 @@
+.about__container{
+    width: 80%;
+    height: 70vh;
+    border: 1px solid black;
+    
+}
+.about__page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.mission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mission_container{
+    display: flex;
+}

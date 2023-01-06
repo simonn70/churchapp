@@ -1,0 +1,31 @@
+.single__container{
+    display: flex;
+    flex-direction: column;
+    top: 0;
+}
+.event .single__container .h2{
+    text-align: center;
+}
+.week__event{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.week__container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.week__box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-image: url("https://images.subsplash.com/image.jpg?id=dbaf8bdc-7ba8-41aa-b34c-7eb6a7c789f2&w=400&h=225");
+}
+
