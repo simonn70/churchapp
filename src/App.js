@@ -7,7 +7,7 @@ import Header from './components/header/Header';
 import Home from './components/home/Home';
 import Event from './components/events/Event';
 import Carousel from './components/carousel/Carousel.js';
-
+import Nav from '../src/components/Nav.js'
 
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
      
       <BrowserRouter>
       <div className="app">
+      <Nav/>
       <Header/>
       
       <Routes>

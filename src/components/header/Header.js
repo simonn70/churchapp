@@ -7,7 +7,7 @@ function Header() {
     const [show,handleShow]= useState(false)
     useEffect(() => {
       window.addEventListener("scroll",()=>{
-        if(window.scrollY>100){
+        if(window.scrollY>50){
             handleShow(true)
         }
         else handleShow(false)
@@ -34,7 +34,7 @@ function Header() {
           </div>
         </Link>
 
-        <Link to='events'>
+        <Link to='/events'>
           <div className="header__opt">
             <span className="opt__textTwo">events</span>
           </div>

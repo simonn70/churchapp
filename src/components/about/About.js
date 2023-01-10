@@ -1,16 +1,45 @@
 import React from 'react'
 import Banner from '../banner/Banner'
 import "./about.css"
+import Car from '../Car.js'
+
+import Slider from 'react-animated-slider';
+import 'react-animated-slider/build/horizontal.css';
+import imageSlide from '../data';
+
 
 function About() {
   return (
     <div className='about'>
-        <Banner title="ABOUT PAGE"/>
+       < Slider autoplay={3000} direction="horizontal" >
+	{imageSlide.map((item, index) => (
+		<div
+			key={index}
+			style={{ background: `url('${item.url}') no-repeat center center`,backgroundPosition:'center',
+            backgroundSize:'cover',
+            height:'100vh',width:'100%'
+            ,
+            display:'flex',
+            alignItems:'center',
+            justifyContent:'center' }}
+		>
+			<div className="center">
+				<h1>ABOUT PAGE</h1>
+				
+				
+			</div>
+		</div>
+	))}
+</Slider>
         <div className="about__page">
-        <div className="about__container">
-            <div className="img"></div>
-            <div className="content"></div>
-        </div>
+        <div className="img">
+                <img src="https://images.subsplash.com/image.jpg?id=dbaf8bdc-7ba8-41aa-b34c-7eb6a7c789f2&w=400&h=225" alt="" />
+            </div>
+            <div className="content">
+                <h3>our vision</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quibusdam quod voluptate fugit corporis voluptatibus magnam incidunt harum voluptates beatae in praesentium eos ipsum placeat, dolores rem cum. Ut, alias.</p>
+                <h3>Rev Adjei Simon</h3>
+            </div>
         </div>
         <div className="description">
             <div className="heading">
@@ -22,34 +51,43 @@ function About() {
             </div>
         </div>
         <div className="mission">
-            <h2>our mission</h2>
+            <h1>our mission</h1>
             <div className="mission_container">
                 <div className="mission__item">
                     <div className="write">
-                        <h2>good</h2>
+                        <h2>Experience God</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nostrum nisi? Facere laudantium vero excepturi dicta ipsam quidem saepe facilis eos dolorem cupiditate similique impedit enim, voluptas eligendi rem modi.</p>
 
                     </div>
                     <div className="write">
-                    <h2>good</h2>
+                    <h2>Experience God</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nostrum nisi? Facere laudantium vero excepturi dicta ipsam quidem saepe facilis eos dolorem cupiditate similique impedit enim, voluptas eligendi rem modi.</p>
 
                     </div>
                 </div>
                 <div className="mission__item">
                     <div className="write">
-                    <h2>good</h2>
+                    <h2>Experience God</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nostrum nisi? Facere laudantium vero excepturi dicta ipsam quidem saepe facilis eos dolorem cupiditate similique impedit enim, voluptas eligendi rem modi.</p>
 
                     </div>
                     <div className="write">
-                    <h2>good</h2>
+                    <h2>Experience God</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nostrum nisi? Facere laudantium vero excepturi dicta ipsam quidem saepe facilis eos dolorem cupiditate similique impedit enim, voluptas eligendi rem modi.</p>
 
                     </div>
                 </div>
 
             </div>
+        </div>
+        <div className="leaders">
+        <h1>OUR LEADERS</h1>
+        </div>
+        <div className="cards">
+        
+        <Car/>
+        <Car/>
+        <Car/>
         </div>
     </div>
   )
